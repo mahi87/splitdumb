@@ -42,5 +42,5 @@ jobs:
     - name: Build the Docker image and push
       run: |
         docker login ghcr.io --username=mahi87 --password=${{ secrets.PACKAGES_TOKEN }}
-        docker build -t ghcr.io/mahi87/splitdumb:0.1.0 . 
-        docker push ghcr.io/mahi87/splitdumb:0.1.0 
+        docker build -t ghcr.io/mahi87/splitdumb:latest . 
+        docker push ghcr.io/mahi87/splitdumb:latest 
